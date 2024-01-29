@@ -2,19 +2,17 @@
 layout: default
 ---
 
-# JustScroll [![Steam](/assets/img/logo-steam-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)   [![Microsoft Store](/assets/img/logo-winstore-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)
+# [Ed's Windows Mods](https://ergeorgiev.github.io/eds-windows-mods/)
 
-Change the volume of your system just by scrolling with your mouse.
+A collection of mods to enhance your Windows experience.
 
-## Features
+# [Essays](https://github.com/ERGeorgiev/essays)
+
+Essays I have written.
+
 - **Scroll on the Taskbar** - Adjust your volume.
 - **Windows + Scroll** - Adjust your volume. This will NOT minimize your game / application.
 - **Emergency Mute** - Scroll down fast to mute your volume instantly.
 - **Precision Scroll** - Hold the left mouse button while scrolling.
 
-
-# Watertime
-
-A simple reminder to help you drink more water during the day.
-
-**Coming Soon...**
+# [Test](https://ergeorgiev.github.io/test/)
