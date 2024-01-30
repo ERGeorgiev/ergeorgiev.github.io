@@ -10,4 +10,4 @@ A collection of apps to enhance your Windows experience.
 
 Essays I have written.
 
-- [**The Meaning of Meaning** - About the meaning of having a meaning.](https://github.com/ERGeorgiev/essays/blob/main/the-meaning-of-meaning.md)
+- [**The Meaning of Meaning**](https://github.com/ERGeorgiev/essays/blob/main/the-meaning-of-meaning.md)
