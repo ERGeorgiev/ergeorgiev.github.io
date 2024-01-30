@@ -2,14 +2,12 @@
 layout: default
 ---
 
-# [Ed's Windows Mods](./eds-windows-mods.html)
+# [**Ed's Windows Mods**](./eds-windows-mods.html)
 
 A collection of apps to enhance your Windows experience.
 
-# [Essays](https://github.com/ERGeorgiev/essays)
+# [**Essays**](https://github.com/ERGeorgiev/essays)
 
 Essays I have written.
 
-- [**The Meaning of Meaning** - A short essay that explores the meaning of having a meaning.](https://github.com/ERGeorgiev/essays/blob/main/the-meaning-of-meaning.md)
-
-# [Test](./test.html)
+- [**The Meaning of Meaning** - About the meaning of having a meaning.](https://github.com/ERGeorgiev/essays/blob/main/the-meaning-of-meaning.md)
