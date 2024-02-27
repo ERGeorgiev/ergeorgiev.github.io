@@ -2,7 +2,8 @@
 layout: eds-windows-mods
 ---
 
-# JustScroll [![Steam](/assets/img/logo-steam-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)   [![Microsoft Store](/assets/img/logo-winstore-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)
+# JustScroll [![Steam](/assets/img/logo-steam-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)
+   <!---[![Microsoft Store](/assets/img/logo-winstore-smallest.png)](https://store.steampowered.com/app/2675800/JustScroll/)-->
 
 Change the volume of your system just by scrolling with your mouse.
 
@@ -12,6 +13,7 @@ Change the volume of your system just by scrolling with your mouse.
 - **Emergency Mute** - Scroll down fast to mute your volume instantly.
 - **Precision Scroll** - Hold the left mouse button while scrolling.
 
+[![Review](/assets/img/justscroll_review.png)](https://store.steampowered.com/app/2675800/JustScroll/)
 
 # Watertime
 
