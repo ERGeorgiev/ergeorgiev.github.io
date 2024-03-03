@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Offerings
+# Offerings 𓅂
 
-## [![EdsWindowsMods](/assets/img/logo-edswindowsmods-intext.png)](./eds-windows-mods.html)[**Windows Mods**](./eds-windows-mods.html)
+## [**Windows Mods**](./eds-windows-mods.html)
 
 - [**JustScroll**](./eds-windows-mods.html)
 
