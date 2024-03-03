@@ -2,12 +2,12 @@
 layout: default
 ---
 
-# [**Ed's Windows Mods**](./eds-windows-mods.html)
+# Offerings
 
-A collection of apps to enhance your Windows experience.
+## [![EdsWindowsMods](/assets/img/logo-edswindowsmods-intext.png)](./eds-windows-mods.html)[**Windows Mods**](./eds-windows-mods.html)
 
-# [**Essays**](https://github.com/ERGeorgiev/essays)
+- [**JustScroll**](./eds-windows-mods.html)
 
-Essays I have written.
+## [**Essays**](https://github.com/ERGeorgiev/essays)
 
 - [**The Meaning of Meaning**](https://github.com/ERGeorgiev/essays/blob/main/the-meaning-of-meaning.md)
