@@ -13,6 +13,8 @@ Change the volume of your system just by scrolling with your mouse.
 - **Emergency Mute** - Scroll down fast to mute your volume instantly.
 - **Precision Scroll** - Hold the left mouse button while scrolling.
 
+[Click here to download the PressKit.](/assets/files/justscroll-presskit.zip)
+
 [![Review](/assets/img/justscroll_review.png)](https://store.steampowered.com/app/2675800/JustScroll/)
 
 # Watertime
