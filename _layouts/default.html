@@ -1,34 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-  </head>
-  <body style="background-color:#181a1b;">
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}"><strong>ERGeorgiev</strong></a></h1>
-
-        <img src="{{site.logo | relative_url}}" alt="Logo" />
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>By <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
+        {%- include head.html -%}
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        {{ content }}
+        <div class="credits">
+          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+          &nbsp;•&nbsp;
+          <a href="https://x.com/ergeorgiev" target="_blank" rel="noreferrer">twitter</a>
+          &nbsp;•&nbsp;
+          <a href="https://github.com/ergeorgiev" target="_blank" rel="noreferrer">github</a>
+          </br>
+          Special thanks to <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Abhinav Saxena (theme)</a> and testers Dimitar Tsenov, Karlis Zakis, Nikola Ivanov, Nikolai Valkov, Toms Jugans.
+        </div>
+      </div>
+    </main>
   </body>
 </html>

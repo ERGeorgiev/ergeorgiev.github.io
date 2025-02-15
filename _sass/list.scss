@@ -1,0 +1,194 @@
+ul.horizontal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  gap: 2em;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: calc(60em + 4em);  // Width of 3 cards (20em * 3) plus 2 gaps (2em * 2)
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 20em);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 20em;
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+    justify-self: center;  // Center each card in its grid cell
+  }
+
+  li a {
+    text-decoration: none;
+    font-weight: normal;
+  }
+}
+
+.card {
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  width: 20em;
+  height: 20em;
+  margin-right: 0.8em;
+  margin-bottom: 0.8em;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 1em;
+  background-color: var(--bg-secondary);
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: #FFA726;
+    cursor: pointer;
+  }
+
+  .gif-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s;
+  }
+
+  &:hover .overlay {
+    opacity: 0;
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 1.2em;
+    padding-bottom: 0.7em;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.05em;
+  }
+
+  .body {
+    font-size: 1.1em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .header {
+    color: #FFA726;
+    font-size: 1.33em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    .body, .header {
+      transform: translateY(100%);
+    }
+  }
+
+  hr {
+    margin: 0.5em 0;
+  }
+
+  &.unclickable {
+    cursor: default;
+    
+    .gif-wrapper {
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+    
+    &:hover {
+      border-color: rgba(0, 0, 0, 0.6);
+      
+      .overlay {
+        opacity: 0.75;
+      }
+      
+      .body, .header {
+        transform: none;
+      }
+
+      .gif-wrapper {
+        filter: grayscale(0%);
+      }
+    }
+    
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 1.2em;
+      padding-bottom: 0.7em;
+      box-sizing: border-box;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 0.05em;
+    }
+  }
+}
+
+@keyframes stop-gif {
+  to { 
+    animation-play-state: paused;
+    background-image: url(attr(data-gif) url); 
+  }
+}
+
+@keyframes play-gif {
+  to { 
+    animation-play-state: running;
+    background-image: url(attr(data-gif) url); 
+  }
+}
+
+/* Responsive cards - one column layout on small screens */
+@media screen and (max-width: 600px) {
+  ul.horizontal-list li.card {
+    width: 100%;
+    height: 15em;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    a, .header {
+      font-size: 1em;
+    }
+  }
+}

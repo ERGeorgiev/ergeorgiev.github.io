@@ -1,0 +1,11 @@
+project_entries:
+  - title: JustScroll
+    url: https://store.steampowered.com/app/2675800
+    desc: Win + Scroll to change volume.
+    gif: /assets/img/project-justscroll-demo.gif
+
+  - title: Watertime
+    url: https://store.steampowered.com/app/3056770
+    desc: Minimal reminder to hydrate.
+    gif: /assets/img/project-watertime-demo.gif
+    highlight: WIP

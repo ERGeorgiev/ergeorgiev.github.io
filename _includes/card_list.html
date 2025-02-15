@@ -1,0 +1,33 @@
+<ul class="horizontal-list">
+  {% for item in include.collection %}
+    <li class="card {% if item.url == nil %}unclickable{% endif %}">
+      <div class="gif-wrapper" style="background-image: url('{{ item.gif }}');"></div>
+      <div class="overlay"></div>
+      {% if item.url %}
+        <a href="{{ item.url }}" target="_blank" rel="noreferrer">
+          <span class="header">
+            {{ item.title }}
+            {% if item.highlight %}
+              <mark>{{ item.highlight }}</mark>
+            {% endif %}
+          </span>
+          <p class="body">
+            {{ item.desc }}
+          </p>
+        </a>
+      {% else %}
+        <div class="content">
+          <span class="header">
+            {{ item.title }}
+            {% if item.highlight %}
+              <mark>{{ item.highlight }}</mark>
+            {% endif %}
+          </span>
+          <p class="body">
+            {{ item.desc }}
+          </p>
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
