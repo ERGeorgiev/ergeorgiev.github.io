@@ -1,3 +1,21 @@
+@keyframes border-dance {
+  0% {
+    border-color: #FFA726 transparent transparent transparent;
+  }
+  25% {
+    border-color: transparent #FFA726 transparent transparent;
+  }
+  50% {
+    border-color: transparent transparent #FFA726 transparent;
+  }
+  75% {
+    border-color: transparent transparent transparent #FFA726;
+  }
+  100% {
+    border-color: #FFA726 transparent transparent transparent;
+  }
+}
+
 ul.horizontal-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20em);
@@ -145,9 +163,47 @@ ul.horizontal-list {
     width: 100%;
     height: 15em;
     margin-bottom: 1em;
+    border: 2px solid transparent;
+    animation: border-dance 2s infinite linear;
+    box-shadow: none;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.8)
+      );
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    a, .content {
+      z-index: 2;
+    }
+
+    .overlay {
+      opacity: 0;
+    }
+    
+    .body, .header {
+      transform: none !important;
+    }
     
     a, .header {
       font-size: 1em;
+    }
+
+    &.unclickable {
+      animation: none;
+      .overlay {
+        opacity: 0.75;
+      }
     }
   }
 }
