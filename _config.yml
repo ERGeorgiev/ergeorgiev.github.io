@@ -14,9 +14,6 @@ remote_theme: abhinavs/moonwalk
 
 theme_config:
   appearance: "dark"
-  show_copyright: true
-  show_projects: true
-  show_tags: true
 
 highlighter: rouge
 

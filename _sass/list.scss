@@ -16,7 +16,8 @@ ul.horizontal-list {
 
 .card {
   padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  border: 0;
+  box-shadow: 0 0 0 1px transparent;
   width: 20em;
   height: 20em;
   text-align: left;
@@ -25,11 +26,17 @@ ul.horizontal-list {
   border-radius: 0.5em;
   position: relative;
   overflow: hidden;
-  transition: border-color 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    border-color: #FFA726;
+    box-shadow: 0 0 0 1px #FFA726;
     cursor: pointer;
+  }
+
+  &:focus, &:focus-visible {
+    outline: none;
   }
 
   .gif-wrapper {
@@ -65,6 +72,10 @@ ul.horizontal-list {
     align-items: flex-start;
     gap: 0.05em;
     text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
   }
 
   .body, .header {
@@ -98,7 +109,7 @@ ul.horizontal-list {
     }
     
     &:hover {
-      border-color: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 0 1px transparent;
       
       .overlay {
         opacity: 0.75;

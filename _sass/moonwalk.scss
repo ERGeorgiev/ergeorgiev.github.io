@@ -42,8 +42,14 @@ body {
 
 .w {
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 4em 2em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 img {
@@ -63,7 +69,7 @@ img {
     --text-secondary: #9CA3AF;
     --code-text: #91A7FF;
     --share-text: #C4C4C4;
-  };
+  }
 }
 
 html[data-theme="dark"] { @include dark-appearance; }
@@ -90,9 +96,12 @@ mark {
 }
 
 .credits {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   font-size: 0.8em;
   color: var(--text);
-  margin: 8em auto -4em;
   text-align: center;
   
   a {
