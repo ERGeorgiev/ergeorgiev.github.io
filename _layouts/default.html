@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
+<html lang="{{ page.lang | default: "en" }}" data-theme="{{ site.theme_config.appearance }}">
         {%- include head.html -%}
   <body>
-    <main class="page-content" aria-label="Content">
+    <main class="page-content">
       <div class="w">
         {{ content }}
         <div class="credits">
@@ -12,7 +12,8 @@
           &nbsp;•&nbsp;
           <a href="https://github.com/ergeorgiev" target="_blank" rel="noreferrer">github</a>
           </br>
-          Special thanks to <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Abhinav Saxena (theme)</a> and testers Dimitar Tsenov, Karlis Zakis, Nikola Ivanov, Nikolai Valkov, Toms Jugans.
+          Special thanks to <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Abhinav Saxena (theme)</a> 
+          and testers Dimitar Tsenov, Karlis Zakis, Nikola Ivanov, Nikolai Valkov, Toms Jugans.
         </div>
       </div>
     </main>
