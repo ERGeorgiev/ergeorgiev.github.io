@@ -1,7 +1,13 @@
 <ul class="horizontal-list">
   {% for item in include.collection %}
     <li class="card {% if item.url == nil %}unclickable{% endif %}">
-      <div class="gif-wrapper" style="background-image: url('{{ item.gif }}');"></div>
+      <div class="gif-wrapper">
+        <div class="static-container">
+          <img class="static-img" src="{{ item.image }}" alt="{{ item.title }}">
+          <img class="play-overlay" src="/assets/img/project-overlay-gif.png" alt="GIF indicator">
+        </div>
+        <img class="hover-gif" src="{{ item.gif }}" alt="{{ item.title }} animation">
+      </div>
       <div class="overlay"></div>
       {% if item.url %}
         <a href="{{ item.url }}" target="_blank" rel="noreferrer">
