@@ -10,4 +10,6 @@ project_entries:
     desc: Minimal reminder to hydrate.
     image: /assets/img/project-watertime-demo.png
     gif: /assets/img/project-watertime-demo.gif
-    highlight: WIP
+
+#  NOTE: The following element displays the project as "WIP"
+#    highlight: WIP
