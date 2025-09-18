@@ -16,6 +16,7 @@ project_entries:
     desc: Captures all console popups.
     image: /assets/img/project-whatjustflashed-demo.png
     gif: /assets/img/project-whatjustflashed-demo.gif
+    highlight: FREE
 
 #  NOTE: The following element displays the project as "WIP"
 #    highlight: WIP
