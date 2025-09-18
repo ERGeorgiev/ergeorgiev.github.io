@@ -10,6 +10,7 @@ project_entries:
     desc: Minimal reminder to hydrate.
     image: /assets/img/project-watertime-demo.png
     gif: /assets/img/project-watertime-demo.gif
+    highlight: FREE
 
   - title: WhatJustFlashed
     url: https://ergeorgiev.itch.io/whatjustflashed
