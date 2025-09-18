@@ -13,7 +13,7 @@ project_entries:
 
   - title: WhatJustFlashed
     url: https://ergeorgiev.itch.io/whatjustflashed
-    desc: Captures suspicious console popups.
+    desc: Captures all console popups.
     image: /assets/img/project-whatjustflashed-demo.png
     gif: /assets/img/project-whatjustflashed-demo.gif
 
