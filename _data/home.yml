@@ -11,5 +11,11 @@ project_entries:
     image: /assets/img/project-watertime-demo.png
     gif: /assets/img/project-watertime-demo.gif
 
+  - title: WhatJustFlashed
+    url: https://ergeorgiev.itch.io/whatjustflashed
+    desc: Captures suspicious console popups.
+    image: /assets/img/project-whatjustflashed-demo.png
+    gif: /assets/img/project-whatjustflashed-demo.gif
+
 #  NOTE: The following element displays the project as "WIP"
 #    highlight: WIP
