@@ -19,5 +19,11 @@ project_entries:
     gif: /assets/img/project-whatjustflashed-demo.gif
     highlight: FREE
 
+  - title: DailyBuffs
+    url: https://dailybuffs.com
+    desc: Tough time? Buff time!
+    image: /assets/img/project-dailybuffs-demo.png
+    gif: /assets/img/project-dailybuffs-demo.gif
+
 #  NOTE: The following element displays the project as "WIP"
 #    highlight: WIP
