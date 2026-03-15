@@ -8,24 +8,25 @@ body {
   line-height: 2;
   margin: 0;
   min-height: 100vh;
-  background-color: #000000;
+  background-color: #0A0A0A;
   background-image:
-    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(79, 233, 250, 0.07), transparent),
-    radial-gradient(ellipse 60% 80% at 85% 75%, rgba(57, 255, 136, 0.05), transparent),
-    radial-gradient(ellipse 50% 50% at 60% 10%, rgba(79, 233, 250, 0.04), transparent),
-    radial-gradient(ellipse 70% 40% at 30% 90%, rgba(57, 255, 136, 0.03), transparent);
+    radial-gradient(circle 600px at 10% 15%, rgba(79, 233, 250, 0.03), transparent),
+    radial-gradient(circle 500px at 90% 80%, rgba(57, 255, 136, 0.025), transparent),
+    radial-gradient(circle 400px at 70% 5%, rgba(79, 233, 250, 0.02), transparent),
+    radial-gradient(circle 450px at 25% 85%, rgba(57, 255, 136, 0.02), transparent);
 
   &::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 0;
+    z-index: 999;
     background-image: radial-gradient(
-      rgba(255, 255, 255, 0.15) 1px,
+      rgba(255, 255, 255, 0.075) 1px,
       transparent 1px
     );
     background-size: 30px 30px;
+    opacity: 0.5;
   }
 }
 
