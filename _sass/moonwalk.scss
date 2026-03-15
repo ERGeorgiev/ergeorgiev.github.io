@@ -16,7 +16,7 @@ body {
     inset: 0;
     pointer-events: none;
     background-image: radial-gradient(
-      rgba(255, 255, 255, 0.075) 1px,
+      rgba(79, 233, 250, 0.06) 1px,
       transparent 1px
     );
     background-size: 30px 30px;
@@ -85,7 +85,6 @@ a {
 mark {
   padding: 0.4em;
   background-color: var(--highlight);
-  color: #000000;
   font-size: 0.6em;
   letter-spacing: 1px;
 }
