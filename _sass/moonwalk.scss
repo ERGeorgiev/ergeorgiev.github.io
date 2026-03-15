@@ -8,19 +8,19 @@ body {
   line-height: 2;
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(
-    125deg,
-    var(--bg) 0%,
-    rgba(40, 35, 65, 1) 45%,
-    rgba(45, 35, 75, 1) 65%,
-    rgba(30, 35, 60, 1) 100%
-  );
-  
+  background-color: #0A0A0A;
+  background-image:
+    radial-gradient(circle 600px at 10% 15%, rgba(79, 233, 250, 0.03), transparent),
+    radial-gradient(circle 500px at 90% 80%, rgba(57, 255, 136, 0.025), transparent),
+    radial-gradient(circle 400px at 70% 5%, rgba(79, 233, 250, 0.02), transparent),
+    radial-gradient(circle 450px at 25% 85%, rgba(57, 255, 136, 0.02), transparent);
+
   &::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
+    z-index: 999;
     background-image: radial-gradient(
       rgba(255, 255, 255, 0.075) 1px,
       transparent 1px
@@ -31,13 +31,13 @@ body {
 }
 
 :root {
-  --headings: #74c0fc;
-  --links: #91A7FF;
-  --highlight: #41C7C7;
-  --bg: #1f242A;
-  --bg-secondary: #323945;
-  --text: #adb5bd;
-  --text-secondary: #9CA3AF;
+  --headings: #4FE9FA;
+  --links: #4FE9FA;
+  --highlight: #39FF88;
+  --bg: #000000;
+  --bg-secondary: #0A0A0A;
+  --text: #F0F0F0;
+  --text-secondary: #6A6A6A;
 }
 
 .w {
@@ -60,23 +60,26 @@ img {
 
 @mixin dark-appearance {
   html, body  {
-    --headings: #74c0fc;
-    --links: #91A7FF;
-    --highlight: #41C7C7;
-    --bg: #1f242A;
-    --bg-secondary: #323945;
-    --text: #adb5bd;
-    --text-secondary: #9CA3AF;
-    --code-text: #91A7FF;
-    --share-text: #C4C4C4;
+    --headings: #4FE9FA;
+    --links: #4FE9FA;
+    --highlight: #39FF88;
+    --bg: #000000;
+    --bg-secondary: #0A0A0A;
+    --text: #F0F0F0;
+    --text-secondary: #6A6A6A;
+    --code-text: #4FE9FA;
+    --share-text: #6A6A6A;
   }
 }
 
 html[data-theme="dark"] { @include dark-appearance; }
 
 // Remove unused styles and keep only dark theme since light theme is not used
-html, body {
+html {
   background-color: var(--bg);
+}
+
+body {
   color: var(--text);
 }
 
@@ -91,6 +94,7 @@ a {
 mark {
   padding: 0.4em;
   background-color: var(--highlight);
+  color: #000000;
   font-size: 0.6em;
   letter-spacing: 1px;
 }

@@ -1,18 +1,18 @@
 @keyframes border-dance {
   0% {
-    border-color: #FFA726 transparent transparent transparent;
+    border-color: #4FE9FA transparent transparent transparent;
   }
   25% {
-    border-color: transparent #FFA726 transparent transparent;
+    border-color: transparent #4FE9FA transparent transparent;
   }
   50% {
-    border-color: transparent transparent #FFA726 transparent;
+    border-color: transparent transparent #4FE9FA transparent;
   }
   75% {
-    border-color: transparent transparent transparent #FFA726;
+    border-color: transparent transparent transparent #4FE9FA;
   }
   100% {
-    border-color: #FFA726 transparent transparent transparent;
+    border-color: #4FE9FA transparent transparent transparent;
   }
 }
 
@@ -49,7 +49,7 @@ ul.horizontal-list {
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    box-shadow: 0 0 0 1px #FFA726;
+    box-shadow: 0 0 0 1px #4FE9FA;
     cursor: pointer;
   }
 
@@ -157,7 +157,7 @@ ul.horizontal-list {
   }
 
   .header {
-    color: #FFA726;
+    color: #4FE9FA;
     font-size: 1.33em;
     font-weight: bold;
   }
